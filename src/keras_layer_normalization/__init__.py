@@ -32,7 +32,7 @@ USER_PARAMS = """def bigquant_run(
 
 
 def run(
-    axis: I.str("指定在哪些轴上进行归一化, 可以是整数、元组或列表，也可以为None", min=-1) = "-1",  # type: ignore
+    axis: I.str("指定在哪些轴上进行归一化, 可以是整数、元组或列表，也可以为None") = "-1",  # type: ignore
     mean: I.str("归一化的均值，可以是标量或数组") = None,  # type: ignore
     variance: I.str("归一化的方差，可以是标量或数组") = None,  # type: ignore
     invert: I.bool("是否应用逆变换，将归一化后的输入恢复到原始形式") = False,  # type: ignore
